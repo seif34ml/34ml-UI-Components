@@ -33,7 +33,7 @@ export default {
               },
               {
                 title: "parent",
-                url: "read/categories/parent",
+                url: "",
                 list: [{ title: "sub", url: "read/categories/parent/sub" }],
               },
               {
@@ -171,6 +171,7 @@ export default {
             ],
           },
         ],
+        menu_submenu_style: false,
       },
     };
   },

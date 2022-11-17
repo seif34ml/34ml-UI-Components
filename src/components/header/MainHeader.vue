@@ -4,6 +4,7 @@
       class="hidden lg:flex"
       :menu="HeaderOptions.menu"
       :logo="HeaderOptions.logo"
+      :styleApply="HeaderOptions.menu_submenu_style"
     />
   </nav>
 </template>
