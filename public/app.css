@@ -518,3 +518,18 @@ video {
   --tw-backdrop-saturate: ;
   --tw-backdrop-sepia: ;
 }
+
+.secondary {
+  color: #00abeb;
+}
+
+/*
+header
+*/
+.header-desktop-container-menu > ul > li {
+  margin-inline-end: 23px;
+}
+
+.header-desktop-container-menu > ul > li:hover {
+  color: #00abeb;
+}
