@@ -124,6 +124,8 @@ export default {
     },
     toggleSubindex(sub) {
       if (this.menuShowSelectedIndex === sub) {
+        this.listShowIndices = null;
+      } else {
         this.listShowIndices = sub;
       }
     },
