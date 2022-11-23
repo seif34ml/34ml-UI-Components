@@ -527,9 +527,66 @@ video {
 header
 */
 .header-desktop-container-menu > ul > li {
-  margin-inline-end: 23px;
+  margin: 0px 23px;
 }
 
 .header-desktop-container-menu > ul > li:hover {
+  color: #00abeb;
+}
+.header-desktop-container-menu > ul > li:hover > div {
+  display: block;
+}
+.header-desktop-container-menu > ul > li > div:hover {
+  display: block;
+}
+
+.header-desktop-container-menu > ul > li > div {
+  right: 50%;
+  transform: translateX(50%);
+}
+.header-desktop-container-menu > ul > li > div > ul > li:hover {
+  background-color: #00abeb;
+  color: #fff;
+}
+.header-desktop-container-menu > ul > li > div > ul > li:last-child {
+  border-bottom: none;
+}
+.header-desktop-container-menu > ul > li > div > ul > li:hover > div {
+  display: block;
+}
+.header-desktop-container-menu
+  > ul
+  > li
+  > div
+  > ul
+  > li
+  > div
+  > ul
+  > li:last-child {
+  border-bottom: none;
+}
+.header-desktop-container-menu > ul > li > div > ul > li > div > ul > li:hover {
+  background-color: #00abeb;
+  color: #fff;
+}
+
+.header-desktop-container-cart > p {
+  padding: 0px 6px;
+  background-color: #00abeb;
+  font-weight: 700;
+}
+
+.header-desktop-container-vsa-submenu {
+  height: max-content;
+  top: 90%;
+}
+
+.header-desktop-container-menu
+  > ul
+  > li:hover
+  > .header-desktop-container-vsa-submenu {
+  display: grid !important;
+}
+.header-desktop-container-vsa-submenu > div > ul > li:hover {
   color: #00abeb;
 }
