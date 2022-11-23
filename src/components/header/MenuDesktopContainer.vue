@@ -2,10 +2,15 @@
   <div class="header-desktop-container-menu">
     <ul class="flex justify-center items-center">
       <li
-        class="relative text-center py-3 cursor-pointer"
+        :class="!styleApply ? 'relative' : 'auto'"
+        class="text-center py-3 cursor-pointer"
         v-for="menuItem in menu"
         :key="menuItem.url"
       >
+        <MenuDesktopTileContainer
+          :menu="menuItem.submenu"
+          :styleApply="styleApply"
+        />
         <a
           class="capitalize text-center text-lg w-full h-full font-semibold"
           :href="menuItem.url"
@@ -81,9 +86,11 @@
 </template>
 
 <script>
+import MenuDesktopTileContainer from "./MenuDesktopTileContainer.vue";
 export default {
   name: "MenuDesktopContainer",
-  props: { menu: Array },
+  props: { menu: Array, styleApply: Boolean },
+  components: { MenuDesktopTileContainer },
 };
 </script>
 
