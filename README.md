@@ -36,15 +36,26 @@
   </ul>
  </td></tr>
     <tr><td></td><td>menu_submenu_style</td><td>Boolean</td><td>if true the dropdown style style will be set to be as rahetbally menu style else default dropdon menu style will be applied</td></tr>
-   <tr><td></td><td>menu_submenu_style</td><td>Boolean</td><td>if true the dropdown style style will be set to be as rahetbally menu style else default dropdon menu style will be applied</td></tr>
+   <tr><td></td><td>cart</td><td>Object</td><td> contain cart info as following 
+     <ul>
+          <li>
+    count:Number=> count of items in cart</li>
+    <li>url:String=> url for cart</li>
+    <li>image:String=> icon filename for cart</li></ul></td>   
+ </tr>
+ 
+ 
+    <tr>
+     <td></td>
+     <td>cart</td> 
+     <td>Object</td>
+     
+     </tr>
+     
  
  
    </table>
-    <h1 style="border:0px !important"><strong>&nbsp &nbsp&nbsp &nbsp HeaderOptions <strong></h1>
-   
-     <table>
-  
-   </table>
+
 
 
 
