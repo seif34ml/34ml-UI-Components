@@ -15,6 +15,30 @@
     <tr><td>NAME</td><td>childprops</td><td>TYPE</td><td>DESCRIPTION</td></tr>
     <tr><td>HeaderOptions</td><td></td><td>Object</td><td>Holds all menu data we want as following</td></tr>
        <tr></td><td><td>logo</td><td>String</td><td>the logo filename  (if you are not  saving images src/assets please got to headerMobile.vue and HeaderDesktop.vue and changepath in computed method  getImgSrc) </td></tr>
+       <tr></td><td><td>menu</td><td>Array of Objects</td><td>holds each menu item details as following
+ <ul>
+  <li>main_title:String=> name of each menu item <li>
+  <li>url:String=> url of each menu item <li>
+  <li>has_submenu:Boolen=> check if menu item contains submenu <li>
+  <li>submenu:Array of objects=> contains submenu items details as following
+   <ul>
+   <li>
+    title:String=> submenu item title</li>
+    <li>url:String=> url for each submenu item</li> 
+    <li>list:Array of Objects=>list of items in each submenu item includes</li>
+     <ul>
+          <li>
+    title:String=> submenu item title</li>
+    <li>url:String=> url for each submenu item</li> 
+    </ul>
+   </ul>
+  
+  </ul>
+ </td></tr>
+    <tr><td></td><td>menu_submenu_style</td><td>Boolean</td><td>if true the dropdown style style will be set to be as rahetbally menu style else default dropdon menu style will be applied</td></tr>
+   <tr><td></td><td>menu_submenu_style</td><td>Boolean</td><td>if true the dropdown style style will be set to be as rahetbally menu style else default dropdon menu style will be applied</td></tr>
+ 
+ 
    </table>
     <h1 style="border:0px !important"><strong>&nbsp &nbsp&nbsp &nbsp HeaderOptions <strong></h1>
    
