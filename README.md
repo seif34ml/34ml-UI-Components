@@ -53,14 +53,13 @@
     </li>
     <\ul></td></tr>
     
-    <tr><td></td><td>mobile_hamburger_menu_icon</td><td>String</td><td> the menu icon filename for mobile view </td></tr>
  
    <tr><td></td><td>cart</td><td>Object</td><td> contain cart info as following 
      <ul>
           <li>
     count:Number=> count of items in cart</li>
     <li>url:String=> url for cart</li>
-    <li>image:String=> icon filename for cart</li></ul></td>   </tr>
+    <li>image:String=> icon filename for cart</li></ul></td>   </tr>  <tr></td><td><td>mobile_menu_icon </td><td>String</td><td>the menu icon filename  (if you are not  saving images src/assets please got to headerMobile.vueand changepath in computed method  getIconSrc) </td></tr>
  
  
        
@@ -73,8 +72,3 @@
 
 
 
-<h1><strong>Before Start <strong></h1>
-
-<span>please install tailwind.css</span>
-
-<span>please copy app.css to yours in your project</span>
