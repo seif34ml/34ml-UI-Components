@@ -12,13 +12,14 @@
  <h1 style="border:0px !important"><strong>&nbsp &nbsp&nbsp &nbsp props <strong></h1>
    
    <table>
-     <tr><td>NAME</td><td>TYPE</td><td>DESCRIPTION</td></tr>
-     <tr><td>HeaderOptions</td><td>Object</td><td>Holds all menu data we want as following</td></tr>
+    <tr><td>NAME</td><td>childprops</td><td>TYPE</td><td>DESCRIPTION</td></tr>
+    <tr><td>HeaderOptions</td><td></td><td>Object</td><td>Holds all menu data we want as following</td></tr>
+       <tr></td><td><td>logo</td><td>String</td><td>the logo filename  (if you are not  saving images src/assets please got to headerMobile.vue and HeaderDesktop.vue and changepath in computed method  getImgSrc) </td></tr>
    </table>
+    <h1 style="border:0px !important"><strong>&nbsp &nbsp&nbsp &nbsp HeaderOptions <strong></h1>
    
-      <table>
-     <tr><td>logo</td><td>String</td><td>the logo filename  (if you are not  saving images src/assets please got to headerMobile.vue and HeaderDesktop.vue and changepath in computed method  getImgSrc) </td></tr>
-     <tr><td>HeaderOptions</td><td>Object</td><td>Holds all menu data we want as following</td></tr>
+     <table>
+  
    </table>
 
 
