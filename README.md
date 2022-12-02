@@ -40,21 +40,30 @@
  
   <tr>
      <td></td>
-     <td>cart</td> 
+     <td>languageOptions</td> 
      <td>Object</td>
-     
-     </tr>
+   <td>includes languages info used in localization as following
+   <ul>
+    <li> selectedLanguage:String=> determine selected language by code example "en for english"</li>
+    <li> languages:Array of objects=> determine languages details as following
+     <ul>
+      <li>languageName:String=> determine the language name example english</li>
+       <li>code:String=> determine the language code </li>
+     </ul>
+    </li>
+    <\ul></td></tr>
+    
+    <tr><td></td><td>mobile_hamburger_menu_icon</td><td>String</td><td> the menu icon filename for mobile view </td></tr>
  
    <tr><td></td><td>cart</td><td>Object</td><td> contain cart info as following 
      <ul>
           <li>
     count:Number=> count of items in cart</li>
     <li>url:String=> url for cart</li>
-    <li>image:String=> icon filename for cart</li></ul></td>   
- </tr>
+    <li>image:String=> icon filename for cart</li></ul></td>   </tr>
  
  
-   
+       
      
  
  
