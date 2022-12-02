@@ -36,6 +36,15 @@
   </ul>
  </td></tr>
     <tr><td></td><td>menu_submenu_style</td><td>Boolean</td><td>if true the dropdown style style will be set to be as rahetbally menu style else default dropdon menu style will be applied</td></tr>
+ 
+ 
+  <tr>
+     <td></td>
+     <td>cart</td> 
+     <td>Object</td>
+     
+     </tr>
+ 
    <tr><td></td><td>cart</td><td>Object</td><td> contain cart info as following 
      <ul>
           <li>
@@ -45,12 +54,7 @@
  </tr>
  
  
-    <tr>
-     <td></td>
-     <td>cart</td> 
-     <td>Object</td>
-     
-     </tr>
+   
      
  
  
