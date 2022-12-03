@@ -7,10 +7,15 @@
 
 
  <h1 style="border:0px !important"><strong>&nbsp &nbsp&nbsp &nbspMainHeader.vue<strong></h1>
+    ![Screenshot from 2022-12-03 15-04-45](https://user-images.githubusercontent.com/116160182/205442350-ad8ade4a-d974-4428-95f6-5afda69932dd.png)
+![Screenshot from 2022-12-03 15-05-06](https://user-images.githubusercontent.com/116160182/205442352-abad92b1-cf23-4390-99ab-bcba303e835e.png)
+![Screenshot from 2022-12-03 15-05-16](https://user-images.githubusercontent.com/116160182/205442354-0240ab23-d762-47f6-bc99-e9080b101221.png)
+ 
 <span>this is our main Container for the header menu holds two subcontainers for desktop and mobile</span>
   
  <h1 style="border:0px !important"><strong>&nbsp &nbsp&nbsp &nbsp props <strong></h1>
-   
+
+
    <table>
     <tr><td>NAME</td><td>childprops</td><td>TYPE</td><td>DESCRIPTION</td></tr>
     <tr><td>HeaderOptions</td><td></td><td>Object</td><td>Holds all menu data we want as following</td></tr>
