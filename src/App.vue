@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <MainHeader :HeaderOptions="HeaderOptions" />
+    <MainFooter :footerOptions="footerOptions" />
   </div>
 </template>
 
 <script>
 import MainHeader from "./components/header/MainHeader.vue";
+import MainFooter from "./components/footer/MainFooter.vue";
 
 export default {
   name: "App",
   components: {
     MainHeader,
+    MainFooter,
   },
   data() {
     return {
@@ -185,6 +188,67 @@ export default {
           ],
         },
         mobile_hamburger_menu_icon: "burger.webp",
+      },
+      footerOptions: {
+        logo: "footerlogo.png",
+        menu: [
+          {
+            title: "magazine",
+            list: [
+              { title: "read", url: "read" },
+              { title: "watch", url: "watch" },
+              { title: "confess", url: "confessions" },
+              { title: "quizzes", url: "quizzes" },
+            ],
+          },
+          {
+            title: "shop",
+            list: [
+              { title: "shop", url: "products" },
+              { title: "rahet bally card", url: "card" },
+              { title: "card catalouge", url: "merchants" },
+            ],
+          },
+          {
+            title: "experience",
+            list: [
+              { title: "get fit", url: "fit-programs" },
+              { title: "events", url: "events" },
+            ],
+          },
+          {
+            title: "about us",
+            list: [
+              { title: "about us", url: "about-us" },
+              { title: "contact us", url: "contact-us" },
+              { title: "advertise with us", url: "advertise-with-us" },
+              { title: "frequently asked questions", url: "faqs" },
+              { title: "terms & conditions", url: "pages/terms/content" },
+              {
+                title: "privacy policy",
+                url: "pages/privacy-policy/content",
+              },
+              { title: "sitemap", url: "sitemap" },
+            ],
+          },
+        ],
+        AppStore: [
+          {
+            img: "play-store-sm.webp",
+            url: "https://keepersecurity.eu/vault/",
+          },
+          { img: "app-store-sm.webp", url: "https://keepersecurity.eu/vault/" },
+        ],
+        socialMedia: [
+          { img: "facebook-footer-icon.webp", url: "https://facebook.com" },
+          { img: "instagram-footer-icon.webp", url: "https://instagram.com" },
+          { img: "facebook-footer-icon.webp", url: "https://facebook.com" },
+          { img: "instagram-footer-icon.webp", url: "https://instagram.com" },
+          { img: "facebook-footer-icon.webp", url: "https://facebook.com" },
+          { img: "facebook-footer-icon.webp", url: "https://facebook.com" },
+        ],
+        copyrightHtml:
+          '<p class="text-white font-montserrat-medium text-xs mt-6" data-v-3254ec04="">© Rahet Bally 2022 | All Rights Reserved | Designed By<a href="https://34ml.com" target="_blank" class="font-montserrat-bold">[34]ML</a></p>',
       },
     };
   },
