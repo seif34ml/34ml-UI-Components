@@ -590,3 +590,16 @@ header
 .header-desktop-container-vsa-submenu > div > ul > li:hover {
   color: #00abeb;
 }
+
+.footer-mobile-submenu {
+  display: none;
+}
+
+.footer-mobile-menu:hover > .footer-mobile-submenu {
+  display: flex;
+  flex-direction: column;
+}
+.footer-mobile-submenu:hover {
+  display: flex;
+  flex-direction: column;
+}

@@ -8,25 +8,25 @@
       :socialMedia="footerOptions.socialMedia"
       :copyrightHtml="footerOptions.copyrightHtml"
     />
-    <!-- <FooterMobile
+    <FooterMobile
       class="flex lg:hidden"
       :menu="footerOptions.menu"
-      :burgerIcon="footerOptions.mobile_hamburger_menu_icon"
       :logo="footerOptions.logo"
-      :styleApply="footerOptions.menu_submenu_style"
-      :cart="footerOptions.cart"
-      :languages="footerOptions.languageOptions"
-    /> -->
+      :AppStore="footerOptions.AppStore"
+      :socialMedia="footerOptions.socialMedia"
+      :copyrightHtml="footerOptions.copyrightHtml"
+    />
   </nav>
 </template>
 
 <script>
 import FooterDesktop from "./FooterDesktop.vue";
-// import HeaderMobile from "./HeaderMobile.vue";
+import FooterMobile from "./FooterMobile.vue";
 export default {
   name: "MainHeader",
   components: {
-    FooterDesktop, //HeaderMobile
+    FooterDesktop,
+    FooterMobile,
   },
   props: {
     footerOptions: Object,

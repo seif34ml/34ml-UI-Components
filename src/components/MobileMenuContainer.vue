@@ -1,9 +1,11 @@
 <template>
   <div class="header-mobile-container-menu">
-    <div>
+    <div @click="showMenu = true" v-show="!showMenu">
       <img class="w-10 h-10" :src="burgerIcon" alt="" />
     </div>
+
     <div
+      v-show="showMenu"
       class="z-50 px-6 py-10 header-mobile-container-menu-tile -left-2 absolute h-screen w-10/12 flex flex-col bg-white top-0"
     >
       <div class="w-full flex flex-row justify-between">
@@ -91,6 +93,8 @@
       </ul>
     </div>
     <div
+      v-show="showMenu"
+      @click="showMenu = false"
       class="absolute top-0 w-screen h-screen bg-slate-500 bg-opacity-50 z-40"
     ></div>
   </div>
@@ -112,6 +116,7 @@ export default {
     return {
       menuShowSelectedIndex: null,
       listShowIndices: null,
+      showMenu: false,
     };
   },
   methods: {
