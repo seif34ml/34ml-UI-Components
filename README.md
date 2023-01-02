@@ -1,5 +1,5 @@
 <h1>footerMenu</h1>
-<p>this  branch for the menuheader component as it contains following files</p>
+<p>this  branch for the menufooter component as it contains following files</p>
 
 
 
