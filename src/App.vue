@@ -1,16 +1,16 @@
 <template>
   <div id="app">
     <div class="grid grid-cols-3">
-      <ProgramCard :programDetails="programDetails" />
+      <SponsorCard :sponsorDetails="sponsorDetails" />
     </div>
   </div>
 </template>
 
 <script>
-import ProgramCard from "./components/ProgramCard.vue";
+import SponsorCard from "./components/SponsorCard.vue";
 export default {
   name: "App",
-  components: { ProgramCard },
+  components: { SponsorCard },
   data() {
     return {
       HeaderOptions: {
@@ -261,6 +261,11 @@ export default {
           url: "/",
           text: "view details",
         },
+      },
+      sponsorDetails: {
+        title: "sponsor1",
+        image:
+          "https://rahet-bally-staging.s3.eu-central-1.amazonaws.com/1496/conversions/rahet-bally-optimized_sponsors_desktop_webp.webp?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA3JCVZFIK6BEJFN5N%2F20230111%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230111T134929Z&X-Amz-SignedHeaders=host&X-Amz-Expires=172800&X-Amz-Signature=07d53a178d13035251eb0c9b4e6d9e5acb268d066c6a8280ffeb7ce0a91c3dc2",
       },
     };
   },
