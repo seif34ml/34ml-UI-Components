@@ -603,3 +603,13 @@ header
   display: flex;
   flex-direction: column;
 }
+.program-card {
+  width: 365px;
+}
+
+.program-card-detail-value {
+  color: #00abeb;
+}
+.program-card-link-div {
+  background-color: #00abeb;
+}

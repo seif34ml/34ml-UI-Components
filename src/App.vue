@@ -1,20 +1,16 @@
 <template>
   <div id="app">
-    <MainHeader :HeaderOptions="HeaderOptions" />
-    <MainFooter :footerOptions="footerOptions" />
+    <div class="grid grid-cols-3">
+      <ProgramCard :programDetails="programDetails" />
+    </div>
   </div>
 </template>
 
 <script>
-import MainHeader from "./components/header/MainHeader.vue";
-import MainFooter from "./components/footer/MainFooter.vue";
-
+import ProgramCard from "./components/ProgramCard.vue";
 export default {
   name: "App",
-  components: {
-    MainHeader,
-    MainFooter,
-  },
+  components: { ProgramCard },
   data() {
     return {
       HeaderOptions: {
@@ -249,6 +245,22 @@ export default {
         ],
         copyrightHtml:
           '<p class="text-white font-montserrat-medium text-xs mt-6" data-v-3254ec04="">© Rahet Bally 2022 | All Rights Reserved | Designed By<a href="https://34ml.com" target="_blank" class="font-montserrat-bold">[34]ML</a></p>',
+      },
+      programDetails: {
+        image:
+          "https://rahet-bally-production.s3.eu-central-1.amazonaws.com/22455/conversions/fitmama-Program%27s-image-thumbnail_d_webp.webp?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA3JCVZFIK6BEJFN5N%2F20230111%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230111T133149Z&X-Amz-SignedHeaders=host&X-Amz-Expires=172800&X-Amz-Signature=289f62dca83295edc01fc7bcf65b14df62e0121f7b41336906f77c656ecc6509",
+        title: "fit-mama",
+        description:
+          "<div>- Program focuses on strengthening the body &amp; building endurance&nbsp;<br>- Nutrition Plan (Optional) updated weekly&nbsp;<br>- Supported by FREE babysitting services</div>",
+        schedule: [
+          { title: "session", value: "14" },
+          { title: "week", value: "4" },
+          { title: "per session", value: "3hrs" },
+        ],
+        link: {
+          url: "/",
+          text: "view details",
+        },
       },
     };
   },
